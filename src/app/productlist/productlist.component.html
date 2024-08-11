@@ -1,0 +1,36 @@
+<section  class="p-4 product bg-white">
+
+    <div class="container" >
+        <div #loading class="loading position-fixed T-25 start-0 bottom-0 end-0 ">
+
+            <i class="fa-solid fa-spinner fa-spin fa-5x"></i>
+        
+           </div>
+        
+    <div class="row g-4">
+    
+    @for (p of productData; track $index) {
+        <div class="col-md-3">
+            <div class="card h-100 p-1">
+            <img [src]="p.image" class="card-img w-50 mx-auto h-4 " alt="">
+            <div class="card-body ">
+        <p> <span class="fw-bold">price :</span> {{p.price}} $ </p>  
+            <p><span class="fw-bold">Ttile :</span> {{p.title.split(" ",2).join(" ")}}</p>
+            <p> <span class="fw-bold">description :</span>{{p.description.split(" ",10).join(" ")}} </p>
+           <p> <span class="fw-bold">category :</span>{{p.category}}</p>
+           
+            
+            </div>
+             <button class="btn btn-dark  ms-auto"> Buy </button>
+            
+            </div>
+            
+            </div>
+            
+    }
+    
+    
+    </div>
+    
+    
+    

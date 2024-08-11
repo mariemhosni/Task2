@@ -1,0 +1,14 @@
+.home{
+    
+    background-image: url("../../assets/1.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family:cursive;}
+.part{
+    height: 75vh;
+}
+
+
+

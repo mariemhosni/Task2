@@ -1,0 +1,19 @@
+.h-4{
+    height: 150px;
+}
+.product{
+    font-family:cursive;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ color: white;
+ background-color: rgba(0, 0, 0, 0.541);
+ 
+    z-index: 99999;
+}
+.T-25{
+position: relative;
+top: 17%;
+}
